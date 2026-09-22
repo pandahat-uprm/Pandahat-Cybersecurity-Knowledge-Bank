@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use or adapt this knowledge bank, please cite it as below."
+title: "PandaHat Cybersecurity Knowledge Bank"
+authors:
+  - family-names: "Infante Degro"
+    given-names: "Manuel A."
+    affiliation: "University of Puerto Rico, Mayagüez"
+  - name: "PandaHat, UPRM cybersecurity student organization"
+license: CC-BY-SA-4.0
+date-released: 2026-09-22
