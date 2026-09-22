@@ -1,0 +1,22 @@
+{
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "yaml.schemas": {
+      "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+    },
+    "markdownlint.config": {
+      "MD013": false,
+      "MD033": false,
+      "MD041": false,
+      "MD046": false
+    },
+    "cSpell.words": [
+      "PandaHat", "UPRM", "Mayagüez", "mkdocs", "Zensical",
+      "Zigbee", "OSINT", "DFIR", "DevSecOps", "picoCTF"
+    ],
+    "[markdown]": {
+      "editor.wordWrap": "on"
+    }
+  }
+  

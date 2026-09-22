@@ -1,0 +1,128 @@
+site_name: PandaHat Cybersecurity Knowledge Bank
+site_description: Free, beginner-friendly cybersecurity guides for every UPRM student.
+site_author: PandaHat, University of Puerto Rico at Mayagüez
+site_url: https://pandahat-uprm.github.io/cyber-knowledge-bank/
+repo_url: https://github.com/pandahat-uprm/cyber-knowledge-bank
+repo_name: pandahat-uprm/cyber-knowledge-bank
+edit_uri: edit/main/docs/
+copyright: Content CC BY-SA 4.0 · Code MIT · PandaHat, UPR Mayagüez
+
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Follow the reader's system setting by default
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black        # adjust to PandaHat's colors
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.action.edit
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - en
+        - es          # lets bilingual readers search with Spanish word forms
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+watch:
+  - includes
+
+validation:
+  anchors: warn     # broken in-page links fail the --strict build
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pandahat-uprm
+
+nav:
+  - Start Here: index.md
+  - Guides:
+      - Build a Home Lab: guides/home-lab.md
+      - Choosing a Specialization: guides/choosing-a-specialization.md
+      - How to Read a Job Posting: guides/reading-job-postings.md
+      - Building a Portfolio: guides/building-a-portfolio.md
+      - Ethics & Legality: guides/ethics-and-legality.md
+  - Areas:
+      - Foundations: areas/foundations.md
+      - Network Security: areas/network-security.md
+      - Security Operations: areas/security-operations.md
+      - Offensive Security: areas/offensive-security.md
+      - Malware Analysis & Reverse Engineering: areas/malware-analysis-reverse-engineering.md
+      - Digital Forensics: areas/digital-forensics.md
+      - Hardware Security: areas/hardware-security.md
+      - IoT & Wireless Security: areas/iot-wireless-security.md
+      - AI & Cybersecurity: areas/ai-security.md
+      - Cloud Security: areas/cloud-security.md
+      - Application & Web Security: areas/application-web-security.md
+      - Cryptography: areas/cryptography.md
+      - Identity & Access Management: areas/identity-access-management.md
+      - Governance, Risk & Compliance: areas/governance-risk-compliance.md
+      - OT/ICS & Critical Infrastructure: areas/ot-ics-security.md
+      - Threat Intelligence: areas/threat-intelligence.md
+      - Social Engineering & Human Factors: areas/social-engineering-human-factors.md
+      - Mobile Security: areas/mobile-security.md
+      - Vulnerability Management: areas/vulnerability-management.md
+      - Security Architecture & Engineering: areas/security-architecture-engineering.md
+  - Platforms & Community:
+      - Learning Platforms: platforms/learning-platforms.md
+      - CTF Competitions & Teams: platforms/ctf-competitions.md
+      - Communities & Conferences: platforms/communities-and-conferences.md
+      - Scholarships & Fellowships: platforms/scholarships-and-fellowships.md
+  - Certifications & Careers:
+      - Certifications Roadmap: certifications/overview.md
+      - The NICE Framework: careers/nice-framework.md
+      - Frameworks on the Job: careers/industry-frameworks.md
+      - The Entry-Level Market: careers/entry-level-reality.md
+      - Government, Defense & Clearances: careers/government-and-defense.md
+  - Glossary: glossary.md
+  - About:
+      - Maintainers: about/maintainers.md
+      - Changelog: about/changelog.md
+      - License: about/license.md

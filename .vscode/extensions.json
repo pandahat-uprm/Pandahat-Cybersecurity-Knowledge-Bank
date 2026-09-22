@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+      "ms-python.python",
+      "redhat.vscode-yaml",
+      "davidanson.vscode-markdownlint",
+      "streetsidesoftware.code-spell-checker",
+      "github.vscode-github-actions",
+      "github.vscode-pull-request-github"
+    ]
+  }

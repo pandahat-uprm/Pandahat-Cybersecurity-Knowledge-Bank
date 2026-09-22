@@ -1,0 +1,40 @@
+name: Monthly maintenance report
+
+on:
+  schedule:
+    - cron: "0 13 1 * *"   # 1st of each month, 13:00 UTC = 9:00 AM in Puerto Rico
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress './docs/**/*.md' README.md
+          output: ./lychee-report.md
+          fail: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check review dates
+        run: python scripts/check_review_dates.py > review-report.md
+
+      - name: Combine reports
+        run: cat review-report.md lychee-report.md > maintenance-report.md
+
+      - name: Open issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Monthly maintenance report
+          content-filepath: ./maintenance-report.md
+          labels: maintenance

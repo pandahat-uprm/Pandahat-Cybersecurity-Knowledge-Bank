@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Create stub pages",
+        "type": "shell",
+        "command": "bash scripts/create-stubs.sh",
+        "problemMatcher": []
+      },
+      {
+        "label": "Preview site",
+        "type": "shell",
+        "command": "bash scripts/sync-index.sh && .venv/bin/mkdocs serve",
+        "isBackground": true,
+        "problemMatcher": [],
+        "group": { "kind": "build", "isDefault": true }
+      },
+      {
+        "label": "Build site (strict, same check as GitHub)",
+        "type": "shell",
+        "command": "bash scripts/sync-index.sh && .venv/bin/mkdocs build --strict",
+        "problemMatcher": [],
+        "group": "test"
+      }
+    ]
+  }
