@@ -1,0 +1,10 @@
+# Default: knowledge bank maintainers review everything
+*                                      @pandahat-uprm/kb-maintainers
+
+# Infrastructure changes need a maintainer
+/.github/                              @pandahat-uprm/kb-maintainers
+/mkdocs.yml                            @pandahat-uprm/kb-maintainers
+
+# Example of an area steward team (add more as volunteers appear)
+/docs/areas/hardware-security.md       @pandahat-uprm/kb-maintainers @pandahat-uprm/hardware-stewards
+/docs/areas/iot-wireless-security.md   @pandahat-uprm/kb-maintainers @pandahat-uprm/hardware-stewards
