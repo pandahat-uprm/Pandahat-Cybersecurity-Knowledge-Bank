@@ -1,8 +1,8 @@
 site_name: PandaHat Cybersecurity Knowledge Bank
 site_description: Free, beginner-friendly cybersecurity guides for every UPRM student.
 site_author: PandaHat, University of Puerto Rico at Mayagüez
-site_url: https://pandahat-uprm.github.io/cyber-knowledge-bank/
-repo_url: https://github.com/pandahat-uprm/cyber-knowledge-bank
+site_url: https://pandahat-uprm.github.io/Pandahat-Cybersecurity-Knowledge-Bank/
+repo_url: https://github.com/pandahat-uprm/Pandahat-Cybersecurity-Knowledge-Bank
 repo_name: pandahat-uprm/cyber-knowledge-bank
 edit_uri: edit/main/docs/
 copyright: Content CC BY-SA 4.0 · Code MIT · PandaHat, UPR Mayagüez
@@ -123,6 +123,8 @@ nav:
       - Government, Defense & Clearances: careers/government-and-defense.md
   - Glossary: glossary.md
   - About:
+      - How to write a page: about/writing-guide.md
+      - Git workflow: about/git-workflow.md
       - Maintainers: about/maintainers.md
       - Changelog: about/changelog.md
-      - License: about/license.md
+      - License: about/license.md 
